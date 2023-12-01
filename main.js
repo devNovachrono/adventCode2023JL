@@ -39,11 +39,10 @@ function getCalculation()
         let digits = getDigits(element);
         let firstNum = digits[0];
         let lastNum = digits[digits.length - 1];
-        console.log(element + " : " + firstNum + lastNum);
         result += parseInt(firstNum + lastNum);
     });
     return result;
 }
 
-var calValue = getCalculation();
-console.log(calValue);
+var day1 = getCalculation();
+console.log("Day 1: " + day1);
