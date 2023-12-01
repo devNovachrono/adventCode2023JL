@@ -1,0 +1,12 @@
+{
+  "name": "adventcode2023",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Lopez",
+  "license": "ISC",
+  "type": "module"
+}
