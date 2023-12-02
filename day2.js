@@ -17,10 +17,7 @@ function orderGameData(data)
                 colorCode = colorCode.split(' ');
                 let colorAmount = parseInt(colorCode[0]);
                 let color = colorCode[1];
-                if (colorAmount > orderedData[gameId][color])
-                {
-                    orderedData[gameId][color] = colorAmount;
-                }
+                if (colorAmount > orderedData[gameId][color]) orderedData[gameId][color] = colorAmount;
             });
         });
     });
@@ -36,10 +33,7 @@ function findPossibleGames(data)
     for (var i = 1; i <= Object.keys(data).length; i++)
     {
         let element = data[i];
-        if (element["red"] <= redPossible && element["green"] <= greenPossible && element["blue"] <= bluePossible)
-        {
-            possibleGames.push(i);
-        }
+        if (element["red"] <= redPossible && element["green"] <= greenPossible && element["blue"] <= bluePossible) possibleGames.push(i);
     }
     return possibleGames;
 }
