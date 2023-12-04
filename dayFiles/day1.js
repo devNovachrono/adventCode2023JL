@@ -1,4 +1,4 @@
-import { calDoc } from './calibrationDoc.js';
+import { calDoc } from '../input/calibrationDoc.js';
 let digitNames = [
     "zero",
     "one",

@@ -1,4 +1,4 @@
-import { input } from './cubePuzzleInput.js';
+import { input } from '../input/cubePuzzleInput.js';
 
 function orderGameData(data)
 {

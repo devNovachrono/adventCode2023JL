@@ -1,4 +1,4 @@
-import { engineSchematic } from './engineSchematic.js';
+import { engineSchematic } from '../input/engineSchematic.js';
 
 function findValidParts(schem, gearRatios = false)
 {
