@@ -48,21 +48,16 @@ function organizeCards()
     cards = result;
 }
 
-function isWinningCard(card)
-{
-    return card["correct"].length > 0;
-}
-
 organizeCards();
-calculatePoints();
+let winningPoints = calculatePoints();
 for (var cardPos in cards)
 {
     let card = cards[cardPos];
-    if (!isWinningCard(card)) continue;
+    if (!card["correct"].length > 0) continue;
     for (var a = 1; a <= card["correct"].length; a++)
     {
         cards[parseInt(cardPos) + a]["copies"] += card["copies"];
     }
 }
 
-export const day4 = [calculatePoints(), (() => {let v = 0; for(let i in cards) {v += cards[i]["copies"];} return v;})()];
+export const day4 = [winningPoints, (() => {let v = 0; for(let i in cards) {v += cards[i]["copies"];} return v;})()];

@@ -1,8 +1,6 @@
 import { input } from '../input/day5input.js';
+//let input = testInput;
 
-//shared functions
-
-//main
 function part1()
 {
     return "";
@@ -10,7 +8,6 @@ function part1()
 
 function part2()
 {
-
     return "";
 }
 
