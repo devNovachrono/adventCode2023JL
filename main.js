@@ -6,4 +6,4 @@ import { day4 } from './dayFiles/day4.js';
 console.log("Day 1: " + day1);
 console.log("Day 2: " + day2[0] + " ; " + day2[1]);
 console.log("Day 3: " + day3[0] + " ; " + day3[1]);
-console.log("Day 4: " + day4);
+console.log("Day 4: " + day4[0] + " ; " + day4[1]);

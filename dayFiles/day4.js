@@ -76,4 +76,4 @@ for (var cardPos in cards)
     }
 }
 
-export const day4 = (() => {let v = 0; for(let i in cards) {v += cards[i]["copies"];} return v;})();
+export const day4 = [calculatePoints(), (() => {let v = 0; for(let i in cards) {v += cards[i]["copies"];} return v;})()];
