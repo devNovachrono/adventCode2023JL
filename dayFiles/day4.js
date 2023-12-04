@@ -48,17 +48,6 @@ function organizeCards()
     cards = result;
 }
 
-function getWinningCards()
-{
-    let result = {};
-    for (var i in cards)
-    {
-        let a = cards[i];
-        if (isWinningCard(a)) result[i] = a;
-    }
-    return result;
-}
-
 function isWinningCard(card)
 {
     return card["correct"].length > 0;
