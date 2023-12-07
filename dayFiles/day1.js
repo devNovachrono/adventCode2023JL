@@ -43,4 +43,4 @@ function getCalculation()
     return result;
 }
 
-export const day1 = getCalculation();
+export const day1 = [55090, getCalculation()];
