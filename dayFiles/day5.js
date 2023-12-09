@@ -1,5 +1,5 @@
-import { input } from '../input/day5input.js';
-//let input = testInput;
+import { testInput } from '../input/day5input.js';
+let input = testInput;
 
 function setupMap(data)
 {
@@ -56,7 +56,18 @@ loop1:
 
 function part2()
 {
-    return "N/A";
+    let sds = [];
+    for (var i = 0; i < seeds.length; i += 2)
+    {
+        sds.push([seeds[i], seeds[i] + seeds[i + 1]]);
+    }
+    for (var i = 0; i < almanac.length; i++)
+    {
+        let mappings = almanac[i].map(v => {
+            return [v.source, v.source + v.range, v.dest];
+        })
+        console.log(sds, mappings);
+    }
 }
 
-export const day5 = [part1(), part2()];
+export const day5 = [part1(), "N/A"];
